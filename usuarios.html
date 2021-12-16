@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="usuarios.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">Clínica Nimeds</a>
+        <ul class="menu">
+            <li class="menu-p">
+                <a href="index.html" class="links">Início</a>
+            </li>
+            <li class="menu-p">
+                <a href="sobre.html" class="links">Sobre o autor</a>
+            </li>
+            <li class="menu-p">
+                <a href="detalhes.html" class="links">Conheça nossos médicos</a>
+            </li>
+            <li class="menu-p">
+                <a href="marcar.html" class="links">Marcar consulta</a>
+            </li>   
+            <li class="menu-p">
+                <a href="login.html" class="links">Administração</a>
+                <ul>
+                    <li><a href="usuarios.html" class="links">Usuarios</a></li>
+                    <li><a href="consultas.html" class="links">Consultas</a></li>
+                </ul>
+            </li>
+            <li class="menu-p">
+                <a href="fale.html" class="links">Fale Conosco</a>
+            </li>
+        </ul>
+    </nav>
+    <h3>Cadastro</h3>
+    <div id="main-container">
+        <form method="post" class="box">
+            <div>
+                <label for="nome">Nome completo:<br></label>
+                <input type="text" required="" id="nome" autocomplete="off"/>
+            </div>
+            <div>
+                <label for="cpf">CPF:<br></label>
+                <input type="text" required="" id="cpf" autocomplete="off"/>            
+            </div>
+            <div>
+                <label for="data">Data de nascimento:<br></label>
+                <input type="date" required="" id="data"/>
+            </div>            
+            <div>
+                <label for="email">E-mail:<br></label>
+                <input type="email" id="email" required="" placeholder="paciente@gmail.com" autocomplete="off"/>
+            </div>
+            <button class="botao" type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <br>
+    <h3>Pessoas cadastradas</h3>
+    <table class="tabela">
+        <tr id="titulos">
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Data de nascimento</th>
+            <th>Ações</th>
+        </tr>
+        <tr>
+            <td>Maria Assunção Costa</td>
+            <td>mariacosta@gmail.com</td>
+            <td>13/06/1985</td>
+            <td>
+               <a class="acoes" href="#">Apagar</a>
+               <a class="acoes" href="#">Editar</a> 
+            </td>
+        </tr>
+        <tr>
+            <td>Antoni Silveira Neves</td>
+            <td>antonisilveiran@gmail.com</td>
+            <td>23/10/2005</td>
+            <td>
+               <a class="acoes" href="#">Apagar</a> 
+               <a class="acoes" href="#">Editar</a> 
+            </td>
+        </tr>
+        <tr>
+            <td>Janiele Moura da Silva</td>
+            <td>janimoura7@gmail.com</td>
+            <td>05/03/1997</td>
+            <td>
+               <a class="acoes" href="#">Apagar</a> 
+               <a class="acoes" href="#">Editar</a> 
+            </td>
+        </tr>
+    </table>    
+    <footer>
+        <br>
+        <a href="sobre.html">Desenvolvido por Nicole</a>
+    </footer>
+</body>
+</html>

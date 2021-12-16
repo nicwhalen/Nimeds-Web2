@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="consultas.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">Clínica Nimeds</a>
+        <ul class="menu">
+            <li class="menu-p">
+                <a href="index.html" class="links">Início</a>
+            </li>
+            <li class="menu-p">
+                <a href="sobre.html" class="links">Sobre o autor</a>
+            </li>
+            <li class="menu-p">
+                <a href="detalhes.html" class="links">Conheça nossos médicos</a>
+            </li>
+            <li class="menu-p">
+                <a href="marcar.html" class="links">Marcar consulta</a>
+            </li>   
+            <li class="menu-p">
+                <a href="login.html" class="links">Administração</a>
+                <ul>
+                    <li><a href="usuarios.html" class="links">Usuarios</a></li>
+                    <li><a href="consultas.html" class="links">Consultas</a></li>
+                </ul>
+            </li>
+            <li class="menu-p">
+                <a href="fale.html" class="links">Fale Conosco</a>
+            </li>
+        </ul>
+    </nav>
+    <h3>Cadastro</h3>
+    <div id="main-container">
+        <form method="post" class="box">
+            <div>
+                <label for="nome">Nome:<br></label>
+                <input type="text" required="" id="nome" autocomplete="off"/>
+            </div>
+            <div>
+                <label for="idade">Idade:<br></label>
+                <input type="text" required="" id="idade" autocomplete="off"/>            
+            </div>
+            <div>
+                <label for="espec">Especialização:<br></label>
+                <input type="text" required="" id="espec"/>
+            </div>      
+            <button class="botao" type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <br>
+    <h3>Médicos cadastrados</h3>
+    <table class="tabela">
+        <tr id="titulos">
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Especialização</th>
+            <th>Ações</th>
+        </tr>
+        <tr>
+            <td>Lucas Menezes</td>
+            <td>47</td>
+            <td>Pediatra</td>
+            <td>
+               <a class="acoes" href="#">Apagar</a>
+               <a class="acoes" href="#">Editar</a> 
+            </td>
+        </tr>
+        <tr>
+            <td>Dayane Costa</td>
+            <td>31</td>
+            <td>Cardiologista</td>
+            <td>
+               <a class="acoes" href="#">Apagar</a> 
+               <a class="acoes" href="#">Editar</a> 
+            </td>
+        </tr>
+        <tr>
+            <td>Mário Duarte</td>
+            <td>34</td>
+            <td>Cardiologista</td>
+            <td>
+               <a class="acoes" href="#">Apagar</a> 
+               <a class="acoes" href="#">Editar</a> 
+            </td>
+        </tr>
+        <tr>
+            <td>Leticia Garcia</td>
+            <td>30</td>
+            <td>Pediatra</td>
+            <td>
+               <a class="acoes" href="#">Apagar</a> 
+               <a class="acoes" href="#">Editar</a> 
+            </td>
+        </tr>
+    </table>    
+    <footer>
+        <br>
+        <a href="sobre.html">Desenvolvido por Nicole</a>
+    </footer>
+</body>
+</html>
